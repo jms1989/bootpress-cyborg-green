@@ -1,0 +1,345 @@
+/*
+ Theme Name:   Bootpress Cyborg Green
+ Theme URI:    http://thelonegeek.net/bootpress-cyborg-green
+ Description:  Bootpress Cyborg Green Theme
+ Author:       J Michael SanAngelo
+ Author URI:   http://thelonegeek.net
+ Template:     bootpress
+ Version:      1.0.0
+ License:      GNU General Public License v2 or later
+ License URI:  http://www.gnu.org/licenses/gpl-2.0.html
+ Tags:         dark, two-columns, right-sidebar, responsive-layout, accessibility-ready
+ Text Domain:  bootpress-cyborg-green
+*/
+html { background: #000;}
+
+
+body {
+  overflow-x: hidden; /* Prevent scroll on narrow devices */
+  background: url('bg.jpg') #000;
+}
+footer {
+  padding: 30px 0;
+}
+
+div.row {
+	background: rgba(0,0,0,0.8);
+	border-radius: 15px;
+}
+
+a, a:hover, a:active, a:focus {
+	color: #3AB60F;
+}
+
+article{-ms-word-wrap: break-word;word-wrap: break-word;}
+blockquote cite{display:block;font-size:.7em;color:#CCCCCC;text-align:right}
+code{white-space:normal}
+.footer {
+  background: #000;
+  border-top: 1px solid #eee;
+  margin-top: 40px;
+  padding: 5px;
+}
+/* article */
+.featured-post{
+padding:10px;
+border: 1px dashed #CCCCCC;
+border-radius: 5px;
+}
+.sticky{padding:5px;border:2px solid #ECDEA6;border-radius:5px;}
+article{
+margin:5px 0;
+}
+.archive-title,
+.page-title,
+.widget-title{
+	font-size: 1em;
+	line-height: 2.181818182;
+	font-weight: bold;
+	text-transform: uppercase;
+	color: #636363;
+}
+.widget ul ul {padding:0px;margin-left:10px}
+.archive-header,
+.page-header {
+	margin-bottom: 48px;
+	margin-bottom: 3.428571429rem;
+	padding-bottom: 22px;
+	padding-bottom: 1.571428571rem;
+	border-bottom: 1px solid #ededed;
+}
+.entry-meta{font-size:.7em;color:#999999;margin:10px}
+.entry-meta>span{margin:5px}
+.entry-meta .glyphicon{margin:3px}
+.entry-content img,
+.comment-content img,
+.widget img {
+	max-width: 100%; /* Fluid images for posts, comments, and widgets */
+	padding:0px;
+	margin:5px;
+}
+img[class*="align"],
+img[class*="wp-image-"],
+img[class*="attachment-"] {
+	height: auto; /* Make sure images with WordPress-added height and width attributes are scaled correctly */
+}
+img.size-full,
+img.size-large,
+img.header-image,
+img.wp-post-image {
+	max-width: 100%;
+	height: auto; /* Make sure images with WordPress-added height and width attributes are scaled correctly */
+}
+.entry-content img,
+.comment-content img,
+.widget img,
+img.header-image,
+.author-avatar img,
+img.wp-post-image {
+	/* Add fancy borders to all WordPress-added images but not things like badges and icons and the like */
+	border-radius: 5px;
+	border: 5px solid #000;
+	box-shadow: 0 1px 4px #444;
+	margin: 15px 10px;
+}
+.wp-caption {
+	max-width: 100%; /* Keep wide captions from overflowing their container. */
+}
+.wp-caption .wp-caption-text,
+.gallery-caption,
+.entry-caption {
+	font-style: italic;
+	font-size: .7em;
+	font-size: 0.857142857rem;
+	line-height: 2;
+	color: #757575;
+}
+.alignleft {
+	float: left;
+}
+.alignright {
+	float: right;
+}
+.aligncenter {
+	display: block;
+	margin-left: auto !important;
+	margin-right: auto !important;
+}
+/* aside */
+article.format-aside .aside {
+	padding: 24px 24px 0;
+	padding: 1.714285714rem;
+	background: #EBEBEB;
+	border-left: 22px solid #CCCCCC;
+}
+/* widget */
+.widget{margin-bottom:10px}
+.widget>ul{list-style:none;padding:0;margin:0}
+.widget li{display:block}
+/* Calendar Widget */
+.widget_calendar table,
+.widget_calendar td {
+	border: 0;
+	border-collapse: separate;
+	border-spacing: 1px;
+}
+
+.widget_calendar caption {
+	font-size: .9em;
+	margin: 0;
+}
+
+.widget_calendar th,
+.widget_calendar td {
+	padding: 4px;
+	text-align: center;
+}
+
+.widget_calendar a {
+	display: block;
+}
+
+.widget_calendar  {
+	background-color: rgba(0, 0, 0, 0.15);
+}
+
+.widget_calendar tbody td {
+	background-color: rgba(244, 244, 244, 0.5);
+}
+/* footer */
+#footer-menu ul{margin:0;padding:0 0 10px 0;list-style:none}
+#footer-menu li{display:inline;padding-right:10px}
+#credits{font-size:.7em}
+.dropdown-menu.submenu{
+display:block;
+margin-left:20px;
+border:0;
+box-shadow:none;
+position:relative
+}
+
+.dropdown-menu>li>a {
+	color: #3AB60F;
+}
+
+.dropdown-menu>li>a:hover {
+	color: #fff;
+	background: #3AB60F;
+}
+
+/*
+ * Off Canvas
+ * --------------------------------------------------
+ */
+@media screen and (max-width: 767px) {
+  .row-offcanvas {
+    position: relative;
+    -webkit-transition: all 0.25s ease-out;
+    -moz-transition: all 0.25s ease-out;
+    transition: all 0.25s ease-out;
+  }
+
+  .row-offcanvas-right
+  .sidebar-offcanvas {
+    right: -50%; /* 6 columns */
+  }
+
+  .row-offcanvas-left
+  .sidebar-offcanvas {
+    left: -50%; /* 6 columns */
+  }
+
+  .row-offcanvas-right.active {
+    right: 50%; /* 6 columns */
+  }
+
+  .row-offcanvas-left.active {
+    left: 50%; /* 6 columns */
+  }
+
+  .sidebar-offcanvas {
+    position: absolute;
+    top: 0;
+    width: 50%; /* 6 columns */
+  }
+}
+/* comments */
+.comments-title {
+	margin-bottom: 48px;
+	margin-bottom: 3.428571429rem;
+	font-size: 1em;
+	line-height: 1.5;
+	font-weight: normal;
+}
+.commentlist,.commentlist ol{
+margin:0;
+padding:0;
+list-style:none;
+list-style-type:none;
+}
+.commentlist li{display:block;padding:5px;margin:5px 10px;border-radius:6px;box-shadow:0px 1px 4px rgba(0, 0, 0, 0.2);line-height:20px}
+.commentlist>li{margin:5px 0px}
+img.avatar{float:left;position:relative;margin-right:10px}
+.commentlist .text-muted{font-size:.7em}
+.form-allowed-tags code{display:block}
+.bypostauthor{border:1px solid #CCCCCC}
+
+.pager > li > a, 
+.pager > li > span {
+	color: #3AB60F;
+}
+
+.pager > li.active > a,
+.pager > li.active > span {
+	color: #FFF;
+	background: #3AB60F;
+}
+
+.pager > li > a:hover, 
+.pager > li > a:focus, 
+.pager > li.active > a:hover,
+.pager > li.active > a:focus,
+.pager > li > span:hover,
+.pager > li > span:focus,
+.pager > li.active > span:hover,
+.pager > li.active > span:focus {
+	color: #fff;
+	background: #3AB60F;
+}
+
+.cat-item {
+	margin-left: 0;
+}
+
+.menu-referrals-container {
+	margin-left: -40px;
+}
+
+.menu-portfolio-container {
+	margin-left: -40px;
+}
+
+.widget li {
+  display: block;
+}
+
+.widget>ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.navbar-brand {
+	font-size: 42px;
+}
+
+h1 {
+	font-size: 32px;
+}
+
+.img-border {
+	border: 0 solid rgba(0,0,0,0.8);
+}
+
+#sidebar {
+	margin-bottom: 25px;
+}
+
+.btn-primary {
+  color: #fff;
+  background-color: #3AB60F;
+  border-color: #3AB60F;
+}
+
+.btn-primary:hover,.btn-primary:focus,.btn-primary:active,.btn-primary.active,.open .dropdown-toggle.btn-primary {
+    border-color: #3AB60F;
+    background-color: #000;
+    color: #3ab60f;
+}
+
+.btn-primary.disabled,.btn-primary[disabled],fieldset[disabled] .btn-primary,.btn-primary.disabled:hover,.btn-primary[disabled]:hover,fieldset[disabled] .btn-primary:hover,.btn-primary.disabled:focus,.btn-primary[disabled]:focus,fieldset[disabled] .btn-primary:focus,.btn-primary.disabled:active,.btn-primary[disabled]:active,fieldset[disabled] .btn-primary:active,.btn-primary.disabled.active,.btn-primary[disabled].active,fieldset[disabled] .btn-primary.active {
+    background-color:#fff;
+    border-color:#fff
+}
+
+.form-control {
+    background-color: #000;
+}
+
+.form-control:focus {
+    border-color: #3AB60F;
+}
+
+.widget_search {
+    margin-top: 25px;
+}
+
+.comment-row {
+    width: 95%;
+    margin: 0 15px;
+}
+
+.comment-box {
+    width: 104%;
+    margin-left: -13px;
+}

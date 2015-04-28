@@ -1,0 +1,23 @@
+.of-radio-img-lable{display:block;width:110px;
+	height:90px;float:left;margin:10px 5px}
+.of-radio-img-img {
+	border:3px solid #f9f9f9;
+	margin:0 5px 10px 0;
+	cursor:pointer;
+	float:left;
+	width:100px;
+	height:80px;
+}
+.of-radio-img-selected {
+	border:3px dashed #CC3300
+}
+
+.of-radio-img-img:hover {
+border:3px dashed #CC3300;
+	opacity:.8;
+}	
+
+.of-radio-img-label.selected {
+	font-weight:bold;
+}
+.of-radio-img-radio{visibility:hidden}

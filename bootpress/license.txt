@@ -1,0 +1,34 @@
+=== Bootpress WordPress Theme License Information === 
+
+Bootpress WordPress Theme, Copyright (C) 2013 Bootpress ( http://99webtools.com/bootpress.html )
+License: GNU General Public License, v3 (or newer)
+License URI: http://www.gnu.org/licenses/gpl.txt
+
+This program is free software; you can redistribute it and/or modify it under the terms of the GNU General Public License as published by the Free Software Foundation; either version 3 of the License, or (at your option) any later version.
+This program is distributed in the hope that it will be useful, but WITHOUT ANY WARRANTY; without even the implied warranty of MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE. See the GNU General Public License for more details.
+
+
+=== Bundled Scripts ===
+
+== /dist/ ==
+Bootstrap, Copyright 2012 Twitter, Inc.
+
+Source: http://getbootstrap.com
+License: Apache License, Version 2.0 (the "License")
+License URI: http://www.apache.org/licenses/LICENSE-2.0
+
+== /dist/fonts/ ==
+
+Source: http://glyphicons.com/license/
+License: Apache License, Version 2.0 (the "License")
+License URI: http://www.apache.org/licenses/LICENSE-2.0
+
+GLYPHICONS Halflings are also a part of Bootstrap from Twitter, and they are released under the same license as Bootstrap. While you are not required to include attribution on your Bootstrap-based projects.
+
+== /dist/css/ == 
+(except /dist/css/default.css, its Bootstrap)
+Bootswatch, Copyright 2012 Thomas Park
+
+Source: http://bootswatch.com/
+License: Apache License, Version 2.0 (the "License")
+License URI: http://www.apache.org/licenses/LICENSE-2.0
